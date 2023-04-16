@@ -1,0 +1,41 @@
+body {
+    background-image: url('../img/Ubunto.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+* {
+    margin: 0;
+}
+
+#app {
+    gap: 2rem;
+    display: flex;
+    min-height: 96.9vh;
+}
+
+#navegacion {
+    padding: 1rem;
+    width: 4rem;
+    background-color: #3f3c3cc4;
+}
+
+.containerBody {
+    display: flex;
+    flex-direction: column;
+
+    img {
+        width: 5rem;
+    }
+}
+
+.horaBateria{
+    background-color: #3f3c3cc4;
+    height: 1.5rem;
+    color: white;
+    padding: .15rem;
+    li{
+        list-style: none;
+    }
+}

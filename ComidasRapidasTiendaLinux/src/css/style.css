@@ -1,0 +1,73 @@
+body {
+  background-image: url("../img/Ubunto.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+* {
+  margin: 0;
+}
+
+#app {
+  gap: 2rem;
+  display: flex;
+  min-height: 96.9vh;
+}
+
+#navegacion {
+  padding: 1rem;
+  width: 4rem;
+  background-color: rgba(63, 60, 60, 0.768627451);
+}
+
+.containerBody {
+  display: flex;
+  flex-direction: column;
+}
+.containerBody img {
+  width: 5rem;
+}
+
+.horaBateria {
+  background-color: rgba(63, 60, 60, 0.768627451);
+  height: 1.5rem;
+  color: white;
+  padding: 0.15rem;
+}
+.horaBateria li {
+  list-style: none;
+}
+
+#navegacion li {
+  list-style: none;
+}
+#navegacion li img {
+  width: 4rem;
+  position: relative;
+  right: 2.3rem;
+  padding-bottom: 1rem;
+}
+#navegacion li img:hover {
+  cursor: pointer;
+}
+
+.filter {
+  filter: invert(100%);
+}
+
+.final {
+  position: absolute;
+  bottom: -14rem;
+}
+
+.clases {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+}
+
+.clases img {
+  width: 1.5rem;
+}
+
+/*# sourceMappingURL=style.css.map */

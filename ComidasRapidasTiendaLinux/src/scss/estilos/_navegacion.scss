@@ -1,0 +1,38 @@
+#navegacion {
+    li {
+        list-style: none;
+
+        img {
+            width: 4rem;
+            position: relative;
+            right: 2.3rem;
+            padding-bottom: 1rem;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.filter {
+    // bottom: -53rem;
+    filter: invert(100%);
+}
+
+.final {
+    position: absolute;
+    bottom: -14rem;
+}
+
+.clases{
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.clases{
+    img{
+        width: 1.5rem;
+    }
+}
