@@ -23,6 +23,7 @@ body {
 .containerBody {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 .containerBody img {
   width: 5rem;
@@ -38,16 +39,16 @@ body {
   list-style: none;
 }
 
-#navegacion li {
+#navegacion li, .contenido li {
   list-style: none;
 }
-#navegacion li img {
+#navegacion li img, .contenido li img {
   width: 4rem;
   position: relative;
   right: 2.3rem;
   padding-bottom: 1rem;
 }
-#navegacion li img:hover {
+#navegacion li img:hover, .contenido li img:hover {
   cursor: pointer;
 }
 
@@ -57,7 +58,7 @@ body {
 
 .final {
   position: absolute;
-  bottom: -14rem;
+  bottom: -19.3rem;
 }
 
 .clases {
@@ -68,6 +69,80 @@ body {
 
 .clases img {
   width: 1.5rem;
+}
+
+.menuUbuntu {
+  position: absolute;
+  right: 0.1rem;
+  top: 1.8rem;
+  background-color: rgba(95, 91, 91, 0.585);
+  width: 94.8%;
+  height: 96.7%;
+}
+
+.contenido ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  padding-top: 17rem;
+  gap: 2rem;
+}
+.contenido ul li {
+  list-style: none;
+}
+
+.ProductosTipoVentanaUbuntu {
+  position: absolute;
+  right: 0.1rem;
+  top: 1.8rem;
+  width: 94.8%;
+  height: 91%;
+}
+.ProductosTipoVentanaUbuntu .barraMenuNav {
+  height: 2rem;
+  background-color: rgba(0, 0, 0, 0.8431372549);
+}
+.ProductosTipoVentanaUbuntu .bodyContainer {
+  height: 100%;
+  display: flex;
+  border: 2px solid #000000;
+}
+
+.panelLateralDerecho {
+  min-width: 15%;
+  background-color: #333;
+}
+
+.panelLateralIzquierdo {
+  min-width: 85%;
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: center;
+}
+.panelLateralIzquierdo table {
+  padding: 2rem;
+  width: 95%;
+}
+
+.imagendelMenu {
+  display: flex;
+  justify-content: center;
+}
+.imagendelMenu img {
+  width: 50%;
+}
+
+.seleccion {
+  position: absolute;
+  top: 53rem;
+  width: 6rem;
+  height: 5rem;
+  background-color: rgba(95, 91, 91, 0.585);
+  left: 0rem;
+  z-index: -1;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,73 @@
+.menuUbuntu {
+    position: absolute;
+    right: .1rem;
+    top: 1.8rem;
+    background-color: rgba(95, 91, 91, 0.585);
+    width: 94.8%;
+    height: 96.7%;
+}
+
+.contenido {
+    ul {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+        padding-top: 17rem;
+        gap: 2rem;
+
+        li {
+            list-style: none;
+        }
+
+    }
+}
+
+
+.ProductosTipoVentanaUbuntu {
+    
+    position: absolute;
+    right: .1rem;
+    top: 1.8rem;
+    width: 94.8%;
+    height: 91%;
+    .barraMenuNav {
+        height: 2rem;
+        background-color: #000000d7;
+    }
+
+    .bodyContainer {
+        height: 100%;
+        display: flex;
+        border: 2px solid #000000;
+
+    }
+
+}
+
+.panelLateralDerecho {
+    min-width: 15%;
+    background-color: #333;
+}
+
+.panelLateralIzquierdo {
+    min-width: 85%;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: center;
+    
+    table{
+        padding: 2rem;
+        width: 95%;
+    }
+
+}
+
+.imagendelMenu{
+    display: flex;
+    justify-content: center;
+    img{
+        width: 50%;
+    }
+}

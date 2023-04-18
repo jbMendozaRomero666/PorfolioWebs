@@ -22,7 +22,7 @@
 
 .final {
     position: absolute;
-    bottom: -14rem;
+    bottom: -19.3rem;
 }
 
 .clases{
@@ -35,4 +35,8 @@
     img{
         width: 1.5rem;
     }
+}
+
+.contenido{
+    @extend #navegacion
 }
