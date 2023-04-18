@@ -1,0 +1,23 @@
+{
+  "name": "porfoliowebs",
+  "version": "1.0.0",
+  "description": "creación de webs para la api express.js para el Front Html Css (preprocesador Sass) javaScript y base de datos relacional mysql",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jbMendozaRomero666/PorfolioWebs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jbMendozaRomero666/PorfolioWebs/issues"
+  },
+  "homepage": "https://github.com/jbMendozaRomero666/PorfolioWebs#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2"
+  }
+}
