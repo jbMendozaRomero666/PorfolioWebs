@@ -1,0 +1,102 @@
+:root {
+  --color-lineal: red;
+}
+
+@media (max-width: 480px) {
+  .estrella {
+    width: 150px;
+    height: 150px;
+    border: 1px solid var(--color-lineal);
+    background-color: yellow;
+    border-radius: 50%;
+    margin: 10px 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .nubes {
+    width: 95px;
+    height: 40px;
+    background: #BFF;
+    background: linear-gradient(top, #BFF 5%, #DFF 100%);
+    background: -webkit-linear-gradient(top, #FFF 1%, #BFF 100%);
+    background: -moz-linear-gradient(top, #BFF 5%, #DFF 100%);
+    background: -ms-linear-gradient(top, #BFF 5%, #DFF 100%);
+    background: -o-linear-gradient(top, #BFF 5%, #DFF 100%);
+    top: 50px;
+    left: 90px;
+    border-radius: 100px;
+    position: absolute;
+    margin: 120px auto 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .nubes:after {
+    width: 50px;
+    height: 50px;
+    top: -20px;
+    left: 50px;
+    border-radius: 100px;
+  }
+}
+
+@media (max-width: 480px) {
+  .nubes:before {
+    width: 70px;
+    height: 70px;
+    top: -30px;
+    right: 20px;
+    border-radius: 200px;
+  }
+}
+
+.nubes:after,
+.nubes:before {
+  content: "";
+  position: absolute;
+  background: #FFF;
+  z-index: -1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: aqua;
+}
+
+.noche {
+  background: #333;
+  color: white;
+}
+.noche .estrella {
+  background: rgb(147, 140, 140);
+  border: none;
+}
+.noche .paisaje {
+  background-color: rgb(0, 103, 2);
+}
+
+.dia {
+  display: flex;
+  justify-content: end;
+  height: 47.5vh;
+}
+
+.paisaje {
+  background-color: rgb(13, 255, 0);
+  border-top: 2px solid #333;
+  width: 100%;
+  height: 47vh;
+}
+
+#clockdate {
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+}
+
+/*# sourceMappingURL=style.css.map */

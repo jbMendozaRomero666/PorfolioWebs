@@ -1,0 +1,193 @@
+:root {
+  --border-color: linear-gradient(to right,
+          tomato 0%,
+          gold 100%);
+  --card-color: #222;
+  --border-hover:#222;
+}
+
+h1 {
+  font-size: 5rem;
+  font-weight: initial;
+  font-family: fantasy;
+}
+
+.contenedor {
+  padding: 3rem;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.card {
+  width: 200px;
+  padding: 5px;
+  border-radius: 16px;
+  background: var(--border-color);
+  aspect-ratio: 10/16;
+  transition: background-color 1s;
+}
+.card:hover {
+  background: var(--border-hover);
+  animation: move 1s;
+  box-shadow: 10px 10px 10px #333;
+}
+
+@keyframes move {
+  0% {
+    transform: translatey(10%) translatey(-20%);
+  }
+}
+@keyframes tranlacion {
+  0% {
+    transform: translatey(10%) translatey(-20%);
+  }
+}
+.card-body {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--card-color);
+  height: 100%;
+  width: 100%;
+  border-radius: 16px;
+  transition: background-color 3s;
+}
+.card-body:hover {
+  background: var(--border-color);
+}
+.card-body:hover p {
+  color: #222;
+}
+
+.card-text {
+  color: white;
+  position: relative;
+  bottom: 190px;
+}
+.card-text .nombre {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 0;
+}
+
+#imagen {
+  position: relative;
+  top: -188px;
+  right: 69px;
+  padding: 2px;
+  width: 10rem;
+  height: 45%;
+}
+
+input {
+  width: 10rem;
+  color: #333;
+  border: 1px solid #333;
+  padding: 0.3rem;
+  border-radius: 2px;
+}
+
+.card-text-body {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  font-size: 13px;
+  border-radius: 3rem;
+}
+.card-text-body p {
+  text-align: center;
+  margin: 0;
+  border: 1px solid white;
+  text-transform: capitalize;
+  padding: 2px;
+}
+.card-text-body p:hover {
+  animation: tranlacion 4s;
+  box-shadow: 1px -4px 20px rgb(17, 17, 17);
+}
+
+.barra {
+  display: flex;
+  justify-content: space-around;
+}
+
+.charizad {
+  background-color: white;
+  border: none;
+  width: 5rem;
+}
+
+button {
+  background-color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.negro {
+  background-color: rgb(31, 30, 30);
+}
+.negro h1 {
+  color: white;
+}
+.negro button {
+  background-color: rgb(31, 30, 30);
+}
+.negro .charizad {
+  filter: invert(88%);
+}
+
+.boll {
+  background-color: black;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+}
+
+.bollArriba {
+  background-color: rgb(255, 0, 0);
+  border: 2px solid #333;
+  border-radius: 80px 80px 0px 0px;
+  width: 100%;
+  height: 50%;
+}
+
+.bollAbajo {
+  background-color: rgb(222, 222, 222);
+  border: 2px solid rgb(208, 36, 36);
+  border-radius: 0px 0px 88px 88px;
+  width: 100%;
+  height: 45%;
+}
+
+.bolita {
+  position: relative;
+  top: -96px;
+  right: -64px;
+  background-color: white;
+  border: 3px solid black;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+}
+
+.bolitas {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 50%;
+  height: 50%;
+  background-color: rgb(229, 221, 221);
+  border: 3px solid rgb(0, 0, 0);
+  border-radius: 50%;
+}
+
+.pokebolla {
+  position: relative;
+  left: 4rem;
+}
+
+/*# sourceMappingURL=style.css.map */

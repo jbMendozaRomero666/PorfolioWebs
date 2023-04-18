@@ -1,0 +1,58 @@
+@use 'mixins' as m;
+
+#card {
+    background: rgb(149, 0, 185);
+    background: linear-gradient(38deg, rgba(149, 0, 185, 1) 10%, rgba(72, 88, 255, 1) 37%, rgba(187, 51, 180, 1) 67%, rgba(255, 45, 81, 1) 90%);
+    padding: .4rem;
+    border-radius: 1rem;
+    width: 15rem;
+    height: 24rem;
+}
+
+.card-body {
+    background: linear-gradient(38deg, rgb(80, 63, 84) 10%, rgb(28, 33, 86) 37%, rgb(71, 1, 67) 67%, rgb(26, 94, 3) 90%);
+    border-radius: 1rem;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all .6s ease;
+
+    &:hover {
+        box-shadow: inset -6px -6px 20px 2px rgb(255, 72, 0);
+
+    }
+    h1 {
+        font-size: large;
+        font-weight: bold;
+        color: white;
+    }
+}
+
+.card-footer {
+    display: flex;
+    color: white;
+    padding: 0 1rem;
+    text-align: center;
+}
+
+#showCardPokemon {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+
+    @include m.pantalla(900px) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+    @include m.pantalla(680px) {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2rem;
+    }
+
+
+}

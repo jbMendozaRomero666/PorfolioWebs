@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/style.css">
+    <title>Reloj</title>
+</head>
+
+<body>
+    <div class="container">
+        <div id="nav">
+            <button class="boton" type="submit" onclick="ModoOscuro()">Noche</button>
+            <p>Github <img class="git" src="src/img/github.svg" alt=""></p>
+        </div>
+        <select id="seleccionar">
+            <option value="" selected disabled>Elija un opcion</option>
+            <option name="" id="">piedra</option>
+            <option name="" id="">papel</option>
+            <option name="" id="">tijeras</option>
+        </select>
+
+        <div class="game">
+            <ul class="mostrar">
+            </ul>
+        </div>
+    </div>
+</body>
+<script src="src/js/app.js"></script>
+
+</html>

@@ -1,0 +1,153 @@
+#card {
+  background: rgb(149, 0, 185);
+  background: linear-gradient(38deg, rgb(149, 0, 185) 10%, rgb(72, 88, 255) 37%, rgb(187, 51, 180) 67%, rgb(255, 45, 81) 90%);
+  padding: 0.4rem;
+  border-radius: 1rem;
+  width: 15rem;
+  height: 24rem;
+}
+
+.card-body {
+  background: linear-gradient(38deg, rgb(80, 63, 84) 10%, rgb(28, 33, 86) 37%, rgb(71, 1, 67) 67%, rgb(26, 94, 3) 90%);
+  border-radius: 1rem;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.6s ease;
+}
+.card-body:hover {
+  box-shadow: inset -6px -6px 20px 2px rgb(255, 72, 0);
+}
+.card-body h1 {
+  font-size: large;
+  font-weight: bold;
+  color: white;
+}
+
+.card-footer {
+  display: flex;
+  color: white;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+#showCardPokemon {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+@media (max-width: 900px) {
+  #showCardPokemon {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+}
+@media (max-width: 680px) {
+  #showCardPokemon {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+  }
+}
+
+#nameViewPokemon {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  padding: 2rem;
+  margin-top: 2rem;
+}
+
+li {
+  list-style: none;
+  padding: 0.4rem;
+}
+
+img {
+  width: 10rem;
+  height: 20rem;
+}
+
+body {
+  background: linear-gradient(145deg, rgb(56, 255, 248) 20%, rgb(96, 75, 75) 40%, rgb(52, 8, 180) 70%, rgb(48, 255, 45) 90%);
+  height: 100vh;
+}
+
+.container {
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+input {
+  border: none;
+  border-radius: 0.2rem;
+  font-size: 1rem;
+  color: black;
+}
+input:hover {
+  background-color: rgb(81, 77, 77);
+  color: white;
+  font-size: 1rem;
+  border: none;
+}
+
+li {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.alert {
+  position: absolute;
+  top: 5.5rem;
+  border-radius: 0.5rem;
+  background-color: rgba(231, 46, 255, 0.315);
+  color: rgb(255, 0, 0);
+  font-size: 1.2rem;
+  font-weight: bold;
+  height: 3rem;
+  padding: 0.3rem;
+  box-shadow: inset 1px 1px 20px 0px #333;
+}
+
+#btnsearcher {
+  border: none;
+  background-color: aqua;
+  border-radius: 0.2rem;
+  width: 5rem;
+  height: 1.3rem;
+}
+#btnsearcher:hover {
+  cursor: pointer;
+  box-shadow: 10px 10px 10px #333;
+}
+
+#dark {
+  border: none;
+  background-color: black;
+  border-radius: 0.2rem;
+  width: 5rem;
+  height: 1.3rem;
+  margin: 1rem;
+  color: white;
+}
+#dark:hover {
+  cursor: pointer;
+  box-shadow: 10px 10px 10px #333;
+}
+
+.ModeDarkBody {
+  color: white;
+  background: linear-gradient(145deg, rgb(39, 38, 38) 20%, rgb(85, 81, 33) 40%, rgb(52, 8, 180) 70%, rgb(10, 90, 8) 90%);
+}
+
+/*# sourceMappingURL=style.css.map */

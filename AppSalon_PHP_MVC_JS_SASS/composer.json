@@ -1,0 +1,20 @@
+{
+    "name": "satell/app-salon_php_mvc_js_sass",
+    "description": "MVC,PHP,SASS,GULP,SQL",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "MVC\\": "./",
+            "Controllers\\": "./controllers",
+            "Model\\": "./models",
+            "Classes\\": "./classes"
+        }
+    },
+    "authors": [{
+        "name": "Jesus mendoza"
+    }],
+    "require": {
+        "phpmailer/phpmailer": "^6.6",
+        "vlucas/phpdotenv": "^5.4"
+    }
+}

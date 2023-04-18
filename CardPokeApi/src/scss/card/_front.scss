@@ -1,0 +1,26 @@
+@use 'mixins' as m;
+
+
+
+.black {
+   background-color: rgb(3, 55, 60);
+
+
+   .barra{
+
+      color: white;
+   }
+   .imagen{
+      filter: invert(100%)
+
+   }
+
+   .boton{
+      @include m.botones(white,black);
+   }
+}
+
+.boton {
+   @include m.botones(black, white);
+}
+

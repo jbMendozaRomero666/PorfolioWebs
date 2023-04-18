@@ -1,0 +1,17 @@
+
+@mixin botones($bg,$color){
+    width: 8rem;
+    height: 2rem;
+    border: none;
+    border-radius: .5rem;
+    transition: .4s ease;
+    font-weight: 500;
+    color: $color;
+    background:$bg;
+
+    &:hover{
+        cursor: pointer;
+        opacity: .9;
+        border-radius: 39px 4px 39px 4px;
+    }
+}

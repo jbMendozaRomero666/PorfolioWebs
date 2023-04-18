@@ -1,0 +1,65 @@
+@use 'mixins' as m;
+body{
+    background: linear-gradient(145deg, rgb(56, 255, 248) 20%, rgb(96 75 75) 40%, rgb(52, 8, 180) 70%, rgb(48, 255, 45) 90%);
+    height: 100vh;
+}
+
+.container{
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label{
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+input{
+    border: none;
+    border-radius: .2rem;
+    font-size: 1rem;
+    color: black;
+    &:hover{
+        background-color: rgb(81, 77, 77);
+        color: white;
+        font-size: 1rem;
+        border: none;
+    }
+}
+
+li{
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.alert{
+    position: absolute;
+    top: 5.5rem;
+    border-radius: .5rem;
+    background-color: rgba(231, 46, 255, 0.315);
+    color: rgb(255, 0, 0);
+    font-size: 1.2rem;
+    font-weight: bold;
+    height: 3rem;
+    padding: .3rem;
+    box-shadow: inset 1px 1px 20px 0px #333;
+}
+
+#btnsearcher{
+    @include m.Button(aqua);
+}
+
+
+#dark{
+    @include m.Button(black);
+    margin:1rem;
+    color: white;
+}
+
+.ModeDarkBody{
+    color:white;
+    background: linear-gradient(145deg, rgb(39, 38, 38) 20%, rgb(85, 81, 33) 40%, rgb(52, 8, 180) 70%, rgb(10, 90, 8) 90%);
+
+}

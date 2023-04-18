@@ -1,0 +1,21 @@
+@media(prefers-color-scheme:dark) {
+
+    body {
+        background-color: #333;
+    }
+
+    .contenedor-header {
+        .barra {
+            background-color: lighten(black, 30%);
+
+            .textoCita {
+                color: white;
+            }
+            a{
+                color: red;
+            }
+        }
+
+    }
+
+}
