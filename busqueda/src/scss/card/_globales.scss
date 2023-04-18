@@ -1,0 +1,17 @@
+#nameViewPokemon{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    padding: 2rem;
+    margin-top:2rem ;
+}
+
+li{
+    list-style: none;
+    padding: .4rem;
+}
+
+img{
+    width: 10rem;
+    height: 20rem;
+}

@@ -1,0 +1,18 @@
+@mixin pantalla($media){
+    @media(max-width: $media) {
+     @content;
+    }
+}
+
+@mixin Button($bg){
+    border: none;
+    background-color: $bg;
+    border-radius: .2rem;
+    width: 5rem;
+    height: 1.3rem;
+    @content;
+    &:hover{
+        cursor: pointer;
+        box-shadow: 10px 10px 10px #333;
+    }
+}

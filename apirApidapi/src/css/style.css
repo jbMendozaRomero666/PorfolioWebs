@@ -1,0 +1,83 @@
+.black {
+  background-color: rgb(58, 52, 52);
+  color: white;
+}
+.black .Navegacion img {
+  filter: invert(100%);
+}
+.black .Navegacion .boton {
+  background-color: rgb(58, 52, 52);
+}
+.black .Navegacion a {
+  color: white;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  color: white;
+  border-radius: 0.5rem;
+  font-size: 10px;
+  width: 10rem;
+  height: 2rem;
+}
+
+.boton {
+  border: none;
+  background-color: white;
+}
+.boton:hover {
+  cursor: pointer;
+}
+
+.Navegacion {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.Navegacion a {
+  color: black;
+}
+
+.centro {
+  margin: 0 2rem;
+}
+
+img {
+  width: 2.7rem;
+}
+
+.titulo {
+  display: flex;
+  gap: 5rem;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  padding: 0;
+}
+
+.ul {
+  display: flex;
+  max-width: 95%;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+.ul .principal {
+  display: flex;
+  align-items: center;
+  gap: 1.4rem;
+}
+.ul li {
+  width: 10rem;
+  list-style: none;
+}
+
+/*# sourceMappingURL=style.css.map */

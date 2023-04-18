@@ -1,0 +1,105 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5rem;
+  max-width: 60rem;
+}
+
+#form {
+  display: flex;
+  width: 90%;
+  height: 2.5rem;
+  gap: 1rem;
+  align-items: center;
+}
+#form input {
+  width: 70%;
+  height: 30%;
+}
+#form label {
+  width: 30%;
+}
+
+#app {
+  width: 100%;
+}
+
+li {
+  display: grid;
+  gap: 0.3rem;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-items: center;
+}
+
+.red {
+  text-decoration: line-through;
+  color: red;
+}
+
+.BtnTareaCompletada {
+  border: none;
+  border-radius: 0.3rem;
+  height: 70%;
+  background-color: rgb(189, 199, 230);
+  color: rgb(65, 148, 2);
+  font-weight: bold;
+  width: 50%;
+  opacity: 1;
+}
+.BtnTareaCompletada:hover {
+  cursor: pointer;
+  box-shadow: 10px 10px 10px #333;
+}
+
+.BtnTareaPendiente {
+  border: none;
+  border-radius: 0.3rem;
+  height: 70%;
+  background-color: rgb(237, 6, 249);
+  color: rgb(24, 24, 24);
+  font-weight: bold;
+  width: 50%;
+  opacity: 1;
+}
+.BtnTareaPendiente:hover {
+  cursor: pointer;
+  box-shadow: 10px 10px 10px #333;
+}
+
+#BtnEliminar {
+  border: none;
+  border-radius: 0.3rem;
+  height: 70%;
+  background-color: rgb(255, 1, 9);
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  width: 50%;
+  opacity: 0.5;
+}
+#BtnEliminar:hover {
+  cursor: pointer;
+  box-shadow: 10px 10px 10px #333;
+}
+
+#btnEnviar {
+  border: none;
+  border-radius: 0.3rem;
+  height: 70%;
+  background-color: rgb(0, 207, 7);
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  width: 25%;
+  opacity: 0.5;
+}
+#btnEnviar:hover {
+  cursor: pointer;
+  box-shadow: 10px 10px 10px #333;
+}
+
+.tareas {
+  text-decoration: line-through;
+}
+
+/*# sourceMappingURL=style.css.map */

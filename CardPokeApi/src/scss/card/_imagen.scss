@@ -1,0 +1,14 @@
+.barra{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    p{
+        display: flex;
+        align-items: center;
+        gap: .5rem;
+    }
+}
+.imagen{
+    width: 4rem;
+}

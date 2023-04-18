@@ -1,0 +1,81 @@
+.contenedor-header {
+
+    .barra {
+
+        background-color: rgba(12, 14, 104, 0.2);
+
+        .textoCita {
+            text-align: center;
+            margin: 0;
+            font-size: 3rem;
+        }
+
+        .navegacion-principal {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+
+
+
+        @media(min-width:750px) {
+
+            background-color: rgba(255, 11, 214, 0.822);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .navegacion-principal {
+                flex-direction: row;
+                padding: 2rem;
+                align-items: center;
+            }
+
+        }
+       
+        a {
+            text-decoration: none;
+            font-size: 2rem;
+            margin-left: 1rem;
+            margin-bottom: 1rem;
+    
+            &:last-of-type {
+                padding-bottom: none;
+            }
+        }
+       
+        
+    }
+}
+
+.seccion {
+    text-align: center;
+
+    h2 {
+        font-size: 4rem;
+    }
+}
+
+.nosotros {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.seccion-central {
+
+    img {
+        width: 100%;
+    }
+
+    @media (min-width:750px) {
+        margin-top: 5rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        border: 1px solid red;
+    }
+}
+
+.footer {
+    margin-top: 3rem;
+}

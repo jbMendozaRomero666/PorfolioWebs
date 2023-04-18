@@ -1,0 +1,147 @@
+:root {
+  --color-card: #333;
+  --color-cardbody: white;
+}
+
+.card {
+  display: flex;
+  width: 12rem;
+  height: 10rem;
+  background: var(--color-card);
+  padding: 0.3rem;
+  border-radius: 4px;
+  margin-bottom: 2rem;
+}
+.card:hover {
+  width: 12rem;
+  height: 16rem;
+  border: 3px solid rgb(0, 239, 195);
+  box-shadow: 12px 5px 10px #333;
+}
+.card:hover .name {
+  text-align: center;
+  text-transform: uppercase;
+}
+@media (max-width: 390px) {
+  .card {
+    width: 34rem;
+    height: 32rem;
+    background: var(--color-cardbody);
+  }
+  .card:hover {
+    width: 35rem;
+    height: 33rem;
+    border: 3px solid rgb(239, 0, 175);
+    box-shadow: 12px 5px 10px #333;
+  }
+}
+
+.card-body {
+  width: 100%;
+  height: 100%;
+  border-radius: 45px 4px 4px 45px;
+  background: var(--color-cardbody);
+  border: 1px solid #333;
+  transition: 0.4s ease;
+}
+.card-body:hover {
+  border-radius: 50%;
+  background-color: red;
+}
+.card-body:hover .name {
+  color: white;
+}
+@media (max-width: 390px) {
+  .card-body {
+    background: var(--color-card);
+  }
+  .card-body:hover .name {
+    color: black;
+  }
+}
+
+.name {
+  padding-left: 0.2rem;
+  font-size: 1rem;
+  font-weight: 900;
+  color: rgb(0, 145, 255);
+}
+@media (max-width: 390px) {
+  .name {
+    color: white;
+  }
+}
+
+.imagenes {
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.cartas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.cartas {
+  display: flex;
+}
+
+.black {
+  background-color: rgb(3, 55, 60);
+}
+.black .barra {
+  color: white;
+}
+.black .imagen {
+  filter: invert(100%);
+}
+.black .boton {
+  width: 8rem;
+  height: 2rem;
+  border: none;
+  border-radius: 0.5rem;
+  transition: 0.4s ease;
+  font-weight: 500;
+  color: black;
+  background: white;
+}
+.black .boton:hover {
+  cursor: pointer;
+  opacity: 0.9;
+  border-radius: 39px 4px 39px 4px;
+}
+
+.boton {
+  width: 8rem;
+  height: 2rem;
+  border: none;
+  border-radius: 0.5rem;
+  transition: 0.4s ease;
+  font-weight: 500;
+  color: white;
+  background: black;
+}
+.boton:hover {
+  cursor: pointer;
+  opacity: 0.9;
+  border-radius: 39px 4px 39px 4px;
+}
+
+.barra {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.barra p {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.imagen {
+  width: 4rem;
+}
+
+/*# sourceMappingURL=style.css.map */

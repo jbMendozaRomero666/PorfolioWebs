@@ -1,0 +1,58 @@
+@use 'mixin' as m;
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+    max-width: 60rem;
+}
+#form{
+  display: flex;
+  width: 90%;
+  height: 2.5rem;
+  gap: 1rem;
+  align-items: center;
+  input{
+    width: 70%;
+    height: 30%;
+  }
+  label{
+    width: 30%;
+  }
+}
+#app{
+    width: 100%;
+}
+li {
+    display: grid;
+    gap: .3rem;
+    grid-template-columns: repeat(3,1fr);
+     align-items: center;
+     justify-items: center;
+}
+.red{
+    text-decoration: line-through;
+    color: red;
+}
+.BtnTareaCompletada {
+    @include m.button(rgb(189, 199, 230), rgb(65, 148, 2),50%);
+}
+
+
+.BtnTareaPendiente {
+    @include m.button(rgb(237, 6, 249), rgb(24, 24, 24),50%);
+}
+
+#BtnEliminar {
+    @include m.button(rgb(255, 1, 9), rgb(255, 255, 255),50%,.5);
+}
+
+#btnEnviar{
+    @include m.button(rgb(0, 207, 7), rgb(255, 255, 255),25%,.5);
+
+}
+
+.tareas {
+    text-decoration: line-through;
+}

@@ -1,0 +1,14 @@
+@mixin button($bg, $color, $width,$opacity:1) {
+    border: none;
+    border-radius: .3rem;
+    height: 70%;
+    background-color: $bg;
+    color: $color ;
+    font-weight: bold;
+    width: $width;
+    opacity: $opacity;
+    &:hover {
+        cursor: pointer;
+        box-shadow: 10px 10px 10px #333;
+    }
+}
