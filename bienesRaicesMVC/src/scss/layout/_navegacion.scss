@@ -1,0 +1,93 @@
+.derecha {
+    display: flex; //lo coloca de izquierda a derecha
+    flex-direction: column; //lo deja en la anterior posicion
+    align-items: center; //boton de luna centrado
+
+    @include tablet {
+        align-items: flex-end; // en una tablet lo muestra de derecha a izquierda o el final de la pantalla
+    }
+
+    .dark-mode-boton{
+        width: 3rem;
+        height: 3rem;
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+
+        filter:invert(100%);
+
+        &:hover{
+            cursor: pointer;
+        }
+
+        @include tablet{
+            margin-top: 0;
+        }
+
+    }
+
+}
+
+
+.barra {
+
+    display: flex; //los coloca juntos
+    flex-direction: column; // los coloca en columnas 
+    align-items: center; //centrar menu de hamburguesa
+    padding-top: 3rem;
+
+    @include tablet {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end; //centrar menu de hamburguesa
+
+
+    }
+}
+
+.navegacion {
+
+    visibility: hidden; //OCULTA EL MENUU DE HAMBURGUESA
+    opacity: 0;
+    height: 0;
+    transition: visibility .3s ease-in-out, opacity 0.5s linear, height .5 linear; // animar menu
+
+    @include tablet {
+        display: flex;
+        align-items: center; //los alinea verticalmente
+        visibility: visible; // que sea visible menu 
+        opacity: 1;
+    }
+
+    a {
+        color: $blanco;
+        text-decoration: none;
+        font-size: 2.2rem;
+        display: block;
+        text-align: center;
+
+        @include tablet {
+            margin-right: 2rem;
+            font-size: 1.8rem;
+
+            &:last-of-type {
+                margin-right: 0; //elimina el ultimo margen a la derecha 
+            }
+        }
+    }
+}
+
+.mobile-menu {
+    @include tablet {
+        display: none;
+    }
+
+    img {
+        width: 5rem;
+    }
+}
+
+.mostrar {
+    visibility: visible;
+    opacity: 1;
+    height: auto;
+}
